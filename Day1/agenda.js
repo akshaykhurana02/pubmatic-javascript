@@ -9,7 +9,7 @@
     Linking a JavaScript File
     Writing a Simple JavaScript Program
     Is JavaScript Compiled or Interpreted?
-    Identifiers    
+    Identifiers  
     Basics of HTML & CSS
 
  */
