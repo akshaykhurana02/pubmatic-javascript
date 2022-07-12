@@ -91,8 +91,10 @@ var func6 = (para1) => {
 };
 
 var oddNumber = x();
-// console.log("Function Called!");
-// func6(oddNumber);
+
+
+console.log("Function Called!");
+func6(oddNumber);
 
 // Here this oddNumber is a Callback Function
 // Here func6 is a Higher Order Function because it is accepting 1 argument which is a function
