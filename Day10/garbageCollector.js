@@ -30,10 +30,8 @@
 
 // person.address = address;
 
-// for (let i = 0; i < 1000000000000; i++) {
-//   let obj1 = {
-//     firstName: "Akshay Khurana",
-//   };
-// }
-
-console.log(performance.memory.usedJSHeapSize);
+for (let i = 0; i < 1000000000000; i++) {
+  let obj1 = {
+    firstName: "Akshay Khurana",
+  };
+}

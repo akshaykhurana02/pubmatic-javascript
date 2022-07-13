@@ -8,8 +8,6 @@
   Event Loop
   Callback Queue
   Microtask Queue
-  Disadvantages of Closure
-
   Pass by Value & Pass by Reference
   Memory Management
   Garbage Collector
