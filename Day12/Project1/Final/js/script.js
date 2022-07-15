@@ -208,9 +208,8 @@ function printQuote() {
   }
   if (quotes.year) {
     quoteString += `<span class="year">${quotes.year}</span></p>`;
-  } else {
-    quoteString += "</p>";
   }
+  quoteString += "</p>";
   quoteContainer.innerHTML = quoteString;
 
   //assigns random color value to document background color
@@ -218,6 +217,4 @@ function printQuote() {
 }
 
 //Event listener on LoadQuote button to generate new quote
-document
-  .getElementById("loadQuote")
-  .addEventListener("click", printQuote, false);
+document.getElementById("loadQuote").addEventListener("click", printQuote);

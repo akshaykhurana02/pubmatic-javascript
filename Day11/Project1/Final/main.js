@@ -4,10 +4,12 @@ function calculate() {
   weight = document.getElementById("weight").value;
   height = document.getElementById("height").value;
   error = "Please enter some values";
-  height /= 100;
-  height *= height;
+  height /= 100; // height = height / 100;
+  height *= height; // height = height * 100;
   bmi = weight / height;
-  bmi = bmi.toFixed(1);
+  bmi = bmi.toFixed(2);
+
+  alert(`BMI is ${bmi}`);
 
   if (bmi <= 18.4) {
     measure = "Your BMI is " + bmi + " which means " + "you are Underweight";
@@ -26,6 +28,7 @@ function calculate() {
   } else {
     document.getElementById("results").innerHTML = measure;
   }
+  
   if (weight < 0) {
     document.getElementById("results").innerHTML =
       "Negative Values not Allowed";
