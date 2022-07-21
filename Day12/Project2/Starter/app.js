@@ -13,7 +13,7 @@ function checkGuess() {
     alert("Please enter a valid number!");
   } else if (guess > 100 || guess < 0) {
     /* (guess > 100 && guess < 0) {  */
-    alert("Please enter a number greater between 1 and 100!");
+    alert("Please enter a number between 1 and 100!");
   } else {
     numberOfAttempts--;
     guessesRemaining.innerHTML = `${numberOfAttempts}`;
@@ -26,7 +26,7 @@ function checkGuess() {
       } else if (guess < randomNumber) {
         lowOrHi.innerHTML = `<h2>You guessed too Low!</h2>`;
       }
-      guessSlot.innerHTML += `${guess} `;
+      guessSlot.innerHTML += `${guess} `; // guessSlot.innerHTML = guessSlot.innerHTML + `${guess} `;
     } else {
       lowOrHi.innerHTML = `Game Over! Number was ${randomNumber}`;
       setTimeout(() => {
@@ -36,7 +36,7 @@ function checkGuess() {
         guessesRemaining.innerHTML = `${numberOfAttempts}`;
         document.getElementById("guessField").value = "";
         lowOrHi.innerHTML = `New game started!`;
-      }, 5000);
+      }, 10000);
     }
   }
 }
