@@ -127,7 +127,7 @@ const arrayOfNumbers = [1, 2, 3, 5, 6, 9, 20];
 
 function findSum(arr) {
     let sum = 0; // Accumulating the sum of individual elements
-    for(let i = 0; i < arr.length; i++) {
+    for (let i = 0; i < arr.length; i++) {
         sum += arr[i];
     }
     return sum;
@@ -160,14 +160,27 @@ const sumOfAges = users.reduce((a, b) => {
 
 console.log(sumOfAges);
 
-
-
-// Assignment
-
-
 /*
+
+    Assignment - 26th July
+
+    const users = [
+        { firstName: "Akshay", lastName: "Khurana", age: 27 },
+        { firstName: "Salman", lastName: "Khan", age: 55 },
+        { firstName: "Riya", lastName: "Rajput", age: 34 },
+        { firstName: "Simran", lastName: "Kapoor", age: 27 },
+    ];
 
     Using reduce,
     Get this Output -> ["Salman Khan", "Riya Rajput"]
     
 */
+
+const filteredUsers10 = users.reduce((accumulator, currentIteration) => {
+    if (currentIteration.age > 27) {
+        accumulator.push(`${currentIteration.firstName} ${currentIteration.lastName}`);
+    }
+    return accumulator;
+}, []);
+
+console.log(filteredUsers10);
