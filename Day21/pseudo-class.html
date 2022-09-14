@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>JavaScript 001</title>
+    <script defer src="./dom-model.js"></script>
+    <style>
+        p:nth-child(even):hover::first-letter {
+            color: blue;
+            font-weight: bold;
+        }
+        p:nth-child(odd):hover {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+  </head>
+  <body id="mainBody">
+   <p>Paragraph 1</p>
+   <p>Paragraph 2</p>
+   <p>Paragraph 3</p>
+   <p>Paragraph 4</p>
+  </body>
+</html>
